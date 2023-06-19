@@ -49,3 +49,18 @@ If you see "None" the command did not properly set and your user account does no
 
 You can use "net user {your username} /times: all" to give full login access permissions to a user account.
 
+## Creating your Windows PowerShell Logout Script
+
+In the previous step, we have prevented a user from logging in before or after specific times. But what if they are already logged in?
+
+We now need to create a script to forcibly logout a user at a certain time. To make sure he or she goes to bed! 
+
+You can create a simple PowerShell script or .bat file to do this for you:
+
+shutdown -r -f -t 01
+
+This is a very simple script that when activated will initiate a logoff and restart procedure on your machine.
+
+
+
+
